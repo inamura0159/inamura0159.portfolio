@@ -33,6 +33,231 @@ footer {
 }
 
 /*-----ヘッダー-----*/
+.card__body {
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.card__title {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.card__title::before {
+  content: '';
+  height: 1px;
+  width: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+}
+
+/* -----メイン・コンパニー----- */
+.information {
+  position: relative;
+  z-index: 1;
+}
+
+.information--layout {
+  margin-bottom: 160px;
+}
+
+.information__body {
+  height: 565px;
+  width: 565px;
+  background-color: #fff;
+}
+
+.information__body--layout {
+  padding-top: 100px;
+  padding-left: 60px;
+}
+
+.horizontal-table {
+  width: 100%;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.horizontal-table__title {
+  font-weight: normal;
+  letter-spacing: .2em;
+  vertical-align: top;
+}
+
+.horizontal-table__text {
+  padding-left: 10px;
+}
+
+.information__img-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+
+.information__img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/*-----フッター-----*/
+.footer__outer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+}
+
+.footer__logo {
+  padding-top: 100px;
+}
+
+.footer__img {
+  width: 100px;
+}
+
+.footer__text {
+  padding-top: 60px;
+  font-size: 0.875rem;
+  color: #8e8e8e;
+}
+
+.footer__copyright {
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+@media screen and (max-width:900px) {
+  .header__inner {
+    flex-direction: column;
+  }
+
+  .header-utilities--layout {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .header-utilities__btn {
+    display: none;
+  }
+
+  .mainvisual {
+    margin-bottom: 80px;
+  }
+
+  /*-----メイン・ニュース----- */
+  .news--layout {
+    margin-bottom: 88px;
+  }
+
+  .news-unit {
+    flex-direction: column;
+  }
+
+  .news-unit__body {
+    padding-bottom: 38px;
+    padding-left: 0;
+    border: none;
+  }
+
+  .news-unit>*:last-child {
+    padding-bottom: 0;
+  }
+
+  /*----- メイン・アバウト -----*/
+  .media {
+    flex-direction: column;
+  }
+
+  .media--layout {
+    margin-bottom: 78px;
+  }
+
+  .media__img-wrapper {
+    width: 100%;
+  }
+
+  .media__body {
+    width: 100%;
+  }
+
+  .media__body--layout {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  /*-----メイン・ビジネス----- */
+  .cards {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .cards--layout {
+    margin-bottom: 80px;
+  }
+
+  .cards__right {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* -----メイン・ビジネス----- */
+  .information {
+    position: static;
+    flex-direction: column;
+  }
+
+  .information--layout {
+    margin-bottom: 0px;
+  }
+
+  .information__body {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .information__body--layout {
+    padding: 40px 5% 30px 5%;
+  }
+
+  .horizontal-table__title,
+  .horizontal-table__text {
+    display: block;
+  }
+
+  .horizontal-table__row {
+    display: block;
+    margin-bottom: 5%;
+  }
+
+  .information__img-wrapper {
+    position: static;
+  }
+
+  /*-----フッター----- */
+  .footer__outer {
+    display: block;
+    padding: 0 5%;
+  }
+
+  .footer__logo {
+    padding-top: 50px;
+  }
+
+  .footer__text {
+    padding-top: 0;
+  }
+
+  .footer__copyright {
+    text-align: left;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
