@@ -338,6 +338,35 @@ footer {
   text-align: center;
 }
 
+/*---スクロール・フェードイン---*/
+.content {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: all 0.5s;
+}
+
+.content.js_scroll {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.media{
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: all 0.5s;
+}
+
+.media.js_scroll {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/*----------------------------------
+
+モバイル版
+
+-----------------------------------*/
+
 @media screen and (max-width:900px) {
   .header__inner {
     flex-direction: column;
